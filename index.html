@@ -50,7 +50,7 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 
 /* ── ENVELOPE ── */
 #envelope-screen{position:fixed;inset:0;z-index:9000;background:#160305;overflow:hidden;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center}
-#envImage{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;z-index:1}
+#envImage{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:1}
 #envVideo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:2;opacity:0;pointer-events:none}
 .env-corner{position:absolute;width:32px;height:32px;opacity:0;z-index:1}
 .env-corner--tl{top:22px;left:22px;border-top:1px solid rgba(164,133,81,.38);border-left:1px solid rgba(164,133,81,.38)}
@@ -550,8 +550,8 @@ body{background:var(--bg);color:var(--text);font-family:'Cormorant Garamond',ser
 <div id="petals"></div>
 
 <div id="envelope-screen">
-  <img id="envImage" src="sobre.png" alt="Invitación de boda" style="opacity:0">
-  <video id="envVideo" src="apertura.mp4" muted playsinline preload="auto"></video>
+  <img id="envImage" src="sobre.jpg" alt="Invitación de boda" style="opacity:0">
+  <video id="envVideo" src="apertura.mp4" poster="sobre.jpg" muted playsinline preload="auto"></video>
   <div class="env-tap" id="envTap">Toca para abrir</div>
 </div>
 
